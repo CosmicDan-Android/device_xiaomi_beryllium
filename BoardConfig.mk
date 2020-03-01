@@ -103,8 +103,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 420
-TW_Y_OFFSET := 80
-TW_H_OFFSET := -80
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := en
@@ -123,3 +121,45 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+# SHRP RECOVERY
+SHRP_PATH := device/xiaomi/beryllium
+
+# Maintainer name
+SHRP_MAINTAINER := REIGNZ
+
+# Device codename
+SHRP_DEVICE_CODE := beryllium
+
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /sdcard1
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+
+# Put 0 to disable flashlight
+SHRP_FLASH := 1
+
+# These are led paths, find yours then put here
+SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+SHRP_FONP_3 := /sys/class/leds/led:switch_0/brightness
+
+# Max Brightness of LED
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section]
+SHRP_REC_TYPE := Treble
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section]
+SHRP_DEVICE_TYPE := A_Only
+
+# SHRP Padding Flag
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+
+# SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
+SHRP_EXPRESS := true
