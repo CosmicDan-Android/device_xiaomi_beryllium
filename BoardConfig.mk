@@ -125,6 +125,7 @@ SHRP_MAINTAINER := REIGNZ
 
 # Device codename
 SHRP_DEVICE_CODE := beryllium
+SHRP_OFFICIAL := true
 
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 0
@@ -155,6 +156,8 @@ SHRP_DEVICE_TYPE := A_Only
 # SHRP Padding Flag
 SHRP_STATUSBAR_RIGHT_PADDING := 40
 SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_NOTCH := true
 
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
 SHRP_EXPRESS := true
+SHRP_DARK := true
