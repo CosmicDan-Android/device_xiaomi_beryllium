@@ -177,3 +177,6 @@ SHRP_NOTCH := true
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
 SHRP_EXPRESS := true
 SHRP_DARK := true
+
+# Force mount system in /system despite SAR policy, useful for maintaining backwards compatibility and/or Samsung devices.
+SHRP_NO_SAR_AUTOMOUNT := true
