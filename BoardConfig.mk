@@ -148,11 +148,11 @@ TW_INCLUDE_FUSE_NTFS := true
 SHRP_PATH := device/xiaomi/beryllium
 
 # Maintainer name
-SHRP_MAINTAINER := REIGNZ
+SHRP_MAINTAINER := "REIGNZ [SAR mod]"
 
 # Device codename
 SHRP_DEVICE_CODE := beryllium
-SHRP_OFFICIAL := true
+SHRP_OFFICIAL := false
 
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 0
@@ -190,4 +190,5 @@ SHRP_EXPRESS := true
 SHRP_DARK := true
 
 # Force mount system in /system despite SAR policy, useful for maintaining backwards compatibility and/or Samsung devices.
-SHRP_NO_SAR_AUTOMOUNT := true
+# CosmicDan: Disabled to enable SAR autodetection; we want Android 10+ OTA compatibility
+#SHRP_NO_SAR_AUTOMOUNT := false
